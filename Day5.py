@@ -34,10 +34,6 @@ for line in fd:
         # SECOND PART
         cargo = get(storage[start], count)
         storage[end] = cargo + storage[end]
-        
-        # print(line)
-        # for stack in storage:
-        #     print(stack)
 
 for stack in storage:
     print(stack.pop(0), end='')
